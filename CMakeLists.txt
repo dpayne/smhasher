@@ -184,6 +184,7 @@ add_library(
   ${METROCRC128_SRC}
   ${SSE4_OBJ}
   t1ha.c
+  darbyhash.c
   mum.cc
 )
 

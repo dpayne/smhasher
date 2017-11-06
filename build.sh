@@ -11,5 +11,5 @@ Darwin)  cmake .. ;;
 FreeBSD) CXX=clang++ CC=clang cmake .. ;;
 *)       CXX=clang++-4.0  CC=clang-4.0 cmake ..   ;;
 esac
-make -j4 $@
+make VERBOSE=1 V=1 -j4 $@
 cd ..

@@ -200,6 +200,7 @@ HashInfo g_hashes[] =
 #endif
 #if defined(__AES__) || defined(_M_X64) || defined(_M_IX86)
   { t1ha_aes_test,              64, 0x54BBFF21, "t1ha_aes",          "Fast Positive Hash (machine-specific, requires: AES-NI)" },
+  { darbyhash_test,             64, 0x54BBFF21, "darbyhash",          "DarbyHash mod of t1ha (machine-specific, requires: AES-NI)" },
 #endif
   { mum_hash_test,              64,
 #if defined(__GNUC__) && UINT_MAX != ULONG_MAX

@@ -216,4 +216,10 @@ inline void t1ha_aes_test(const void * key, int len, uint32_t seed, void * out)
 {
   *(uint64_t*)out = t1ha_ia32aes(key, len, seed);
 }
+
+#include "darbyhash.h"
+inline void darbyhash_test(const void * key, int len, uint32_t seed, void * out)
+{
+    *(uint64_t *)out = darbyhash(key, len, seed);
+}
 #endif
